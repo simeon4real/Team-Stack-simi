@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.main-container {
+	max-width: 1500px;
+	min-height: 320px;
+}
+.sub-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.form-container {
+	width: 30%;
+	height: 100vh;
+	background: #e5e5e5;
+}
+form {
+	margin-top: -2rem;
+}
+.logbtn {
+	width: 12rem;
+	background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+	border-radius: 12px;
+	padding: .6rem;
+	color: #fff;
+	font-size: 17px;
+}
+.bottom-text {
+	margin-top: 2rem;
+}
+.forgot_password_text,
+.have_noaccount_text {
+	/* margin-top: 1rem; */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19px;
+}
+
+.welcome_text {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 109px;
+	line-height: 163px;
+	color: #fff;
+}
+.welcome_text_div {
+	width: 70%;
+	background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+	height: 100vh;
+}
+.labels {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+}
+.welcome_text_p_tag {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+.sign_up_text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: -0.01em;
+}
+.login-form {
+	/* width: 360px; */
+	/* background: #f1f1f1; */
+	/* height: 580px; */
+	padding: 80px 40px;
+	border-radius: 10px;
+}
+.login-form h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.below_text {
+	position: absolute;
+	top: 8.5rem;
+	right: 28.5rem;
+}
+.image_of_team_stack_below_text {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+}
+.below_text_teamStack {
+	position: absolute;
+	bottom: 3.7rem;
+	right: 3.1rem;
+}
+
+.txtb {
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px 0;
+}
+
+.txtb input {
+	font-size: 15px;
+	color: #333;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 5px;
+	height: 40px;
+}
+
+.txtb span::before {
+	content: attr(data-placeholder);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: .5s;
+}
+
+.txtb span::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	/* background: linear-gradient(120deg, #3498db, #2ac374); */
+	transition: .5s;
+}
+.focus + span::before {
+	top: -5px;
+}
+.focus + span::after {
+	width: 100%;
+}
+@media (max-width: 1024px) {
+	.below_text {
+		position: absolute;
+		top: 8.5rem;
+		right: 18.5rem;
+	}
+}

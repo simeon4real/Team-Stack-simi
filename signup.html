@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Page</title>
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="main-container">
+
+<div class="sub-container">
+    <div class="form-container">
+      <form action="signup.html" class="login-form">
+        <h1 class="sign_up_text">Sign Up</h1>
+        <div class="txtb">
+            <label class="labels">Full name</label>
+            <input type="text" placeholder="Team Stack">
+            <span data-placeholder="Username"></span>
+        </div>
+    
+        <div class="txtb">
+                <label class="labels">User name</label>
+            <input type="text" placeholder="@TeamStack_HNG">
+            <span data-placeholder="Password"></span>
+        </div>
+        
+        <div class="txtb">
+                <label class="labels">Email Address</label>
+                <input type="email" placeholder="teamStack@example.com">
+                <span data-placeholder="Password"></span>
+            </div>
+            <div class="txtb">
+                    <label class="labels">Password</label>
+                <input type="password" placeholder="*******">
+                <span data-placeholder="Password"></span>
+            </div>
+            <center>
+    <input type="submit" class="logbtn" value="Sign Up">
+ 
+    <div class="bottom-text">
+     <p class="forgot_password_text">Forgot Password?</p> 
+      <p class="have_noaccount_text">  Have no account yet? 
+? </p>
+    </div>
+  </div>
+</center>
+</form>
+<div class="welcome_text_div">
+    <center>
+            <div class="image_of_team_stack_above">
+                    <img src="./img/Vector.svg"  alt="teamStack" class="above_image">
+            </div>   
+        
+        <div class="image_of_team_stack_below">
+            <img src="./img/TEAM STACK.svg" alt="teamStack" class="below_text">
+           
+            </div>  
+          
+            <h1 class="welcome_text">Welcome!</h1>     
+    
+            <p class="welcome_text_p_tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio natus neque perspiciatis beatae temporibus minus distinctio sequi. Quibusdam ut quis voluptatibus porro, quo ipsam dicta aut eius quod laboriosam.</p>
+            <div class="image_of_team_stack_below_text">
+                   <img src="./img/Vector (1).svg" alt="teamStack">
+                   <img src="./img/TEAM STACK (1).svg" alt="teamStack" class="below_text_teamStack">
+            </div>
+    </center>
+
+</div>
+
+
+</div>
+
+</div>    
+   
+    <script type="text/javascript">
+    $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+    })
+    $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+         $(this).removeClass("focus");
+    })
+    </script>
+</body>
+</html>
