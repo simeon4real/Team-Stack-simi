@@ -7,14 +7,34 @@
     <title>Sign Up Page</title>
     <link href="css/signup.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    
 </head>
 <body>
 
 <div class="main-container">
 
 <div class="sub-container">
+    <!-- this div only displays on mobile starting -->
+    
+        <div class="div_for_mobile_view">
+                <div class="image_of_team_stack_above">
+                    <center>
+                            <img src="./img/Vector.svg"  alt="teamStack" class="above_image">
+                    </center>    
+                </div>   
+            
+            <div class="image_of_team_stack_below">
+                <img src="./img/TEAM STACK.svg" alt="teamStack" class="below_text">
+               
+                </div>
+                <h2 class="welcome_text_mobile">Welcome!</h2>     
+    
+                <p class="welcome_text_p_tag_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio natus neque perspiciatis beatae temporibus minus distinctio sequi. Quibusdam ut quis voluptatibus porro, quo ipsam dicta aut eius quod laboriosam.</p>
+        </div>
+        <!-- this div only displays on mobile ending -->
     <div class="form-container">
+
+        
       <form action="signup.html" class="login-form">
         <h1 class="sign_up_text">Sign Up</h1>
         <div class="txtb">
@@ -60,14 +80,15 @@
             <img src="./img/TEAM STACK.svg" alt="teamStack" class="below_text">
            
             </div>  
-          
-            <h1 class="welcome_text">Welcome!</h1>     
+          <div class="whole_div_welcome_text">
+            <p class="welcome_text">Welcome!</p>     
     
             <p class="welcome_text_p_tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio natus neque perspiciatis beatae temporibus minus distinctio sequi. Quibusdam ut quis voluptatibus porro, quo ipsam dicta aut eius quod laboriosam.</p>
             <div class="image_of_team_stack_below_text">
                    <img src="./img/Vector (1).svg" alt="teamStack">
                    <img src="./img/TEAM STACK (1).svg" alt="teamStack" class="below_text_teamStack">
             </div>
+        </div>
     </center>
 
 </div>
@@ -77,14 +98,6 @@
 
 </div>    
    
-    <script type="text/javascript">
-    $(".txtb input").on("focus", function(){
-        $(this).addClass("focus");
-    })
-    $(".txtb input").on("blur", function(){
-        if($(this).val() == "")
-         $(this).removeClass("focus");
-    })
-    </script>
+
 </body>
 </html>
