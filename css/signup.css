@@ -37,8 +37,7 @@ form {
 .bottom-text {
 	margin-top: 2rem;
 }
-.forgot_password_text,
-.have_noaccount_text {
+.already_user_text, {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 300;
